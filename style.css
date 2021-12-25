@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.container .box{
+
+  background-color: #fff;
+  margin: 20px ;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+
+  }
+
+  .container .box .icon{
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: 800;
+    transition: 1s;
+
+
+  }
+
+
+
+
+  .container .box:nth-child(1) .icon{
+    background: #e91e63;
+    box-shadow: 0 0 0 0 #e91e63;
+  }
+
+  .container .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #e91e63;
+    border: 1px solid #fff;
+
+  }
+
+  .container .box:nth-child(2) .icon{
+    background-color: #23e629;
+    box-shadow: 0 0 0 0 #23e629;
+  }
+
+  .container .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #23e629;
+    border: 1px solid #fff;
+
+  }
+
+
+  .container .box:nth-child(3) .icon{
+    background-color: #2196f3;
+    box-shadow: 0 0 0 0 #2196f3;
+  }
+
+  .container .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #2196f3;
+    border: 1px solid #fff;
+
+  }
+
+
+
+
+
+  .container .box .content{
+    z-index: 2;
+    color: black;
+    transition: 0.5s;
+    position: relative;
+  }
+
+  .container .box:hover .content{
+      color: white
+  }
+
+  .container .box h3{
+    font-size: 20px;
+margin: 30px 0 15px;
+    padding: 0
+  }
+
+  .container .box p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0
+
+  }
+
+
+.container .box a{
+  color: black;
+  width: 150px;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2);
+  font-weight: 600;
+  transition: 0.8s;
+  border:1px solid black;
+
+}
+.container .box:hover a{
+  color: white;
+  border: 1px solid white;
+}
+
+
+
+.container .box::after {
+  content: '';
+  width: 50%;
+  height: 200%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+}
